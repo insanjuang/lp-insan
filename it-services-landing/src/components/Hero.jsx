@@ -50,7 +50,7 @@ const Hero = () => {
               </h1>
 
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Kami menyediakan layanan IT lengkap mulai dari repair komputer, instalasi jaringan, 
+                Insan Tekno Sejahtera menyediakan layanan IT lengkap mulai dari repair komputer, instalasi jaringan, 
                 CCTV, hingga pengembangan website dan aplikasi untuk mendukung kemajuan bisnis Anda.
               </p>
 

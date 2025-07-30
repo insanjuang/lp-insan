@@ -33,8 +33,8 @@ const Header = () => {
               <Monitor className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-secondary-900">TechSolution</h1>
-              <p className="text-xs text-secondary-600">IT Services</p>
+              <h1 className="text-xl font-bold text-secondary-900">ITs</h1>
+              <p className="text-xs text-secondary-600">Insan Tekno Sejahtera</p>
             </div>
           </div>
 

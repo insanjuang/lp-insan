@@ -52,8 +52,8 @@ const Footer = () => {
                   <Monitor className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">TechSolution</h3>
-                  <p className="text-xs text-secondary-400">IT Services</p>
+                  <h3 className="text-xl font-bold">ITs</h3>
+                  <p className="text-xs text-secondary-400">Insan Tekno Sejahtera</p>
                 </div>
               </div>
               <p className="text-secondary-300 mb-6 leading-relaxed">
@@ -124,8 +124,8 @@ const Footer = () => {
                 <div className="flex items-start space-x-3">
                   <Mail className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-secondary-300">info@techsolution.com</p>
-                    <p className="text-secondary-300">support@techsolution.com</p>
+                    <p className="text-secondary-300">info@insansejahtera.com</p>
+                    <p className="text-secondary-300">support@insansejahtera.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -176,7 +176,7 @@ const Footer = () => {
           {/* Bottom Footer */}
           <div className="border-t border-secondary-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="text-secondary-400 text-sm mb-4 md:mb-0">
-              © 2024 TechSolution. All rights reserved. Dibuat dengan ❤️ untuk kemajuan teknologi Indonesia.
+              © 2024 Insan Tekno Sejahtera. All rights reserved. Dibuat dengan ❤️ untuk kemajuan teknologi Indonesia.
             </div>
             <div className="flex items-center space-x-6">
               <a href="#" className="text-secondary-400 hover:text-primary-400 text-sm transition-colors">

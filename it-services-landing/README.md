@@ -1,6 +1,6 @@
-# TechSolution - Landing Page IT Services
+# Insan Tekno Sejahtera - Landing Page IT Services
 
-Landing page profesional untuk bisnis layanan IT yang menyediakan solusi teknologi lengkap meliputi repair komputer, instalasi jaringan, CCTV, pengembangan website & aplikasi, serta desain grafis.
+Landing page profesional untuk bisnis layanan IT "Insan Tekno Sejahtera (ITs)" yang menyediakan solusi teknologi lengkap meliputi repair komputer, instalasi jaringan, CCTV, pengembangan website & aplikasi, serta desain grafis.
 
 ## 🚀 Fitur Utama
 
@@ -169,10 +169,12 @@ Tambahkan class Tailwind untuk animasi:
 - `animate-bounce` - Efek bounce
 - `transition-all duration-300` - Smooth transitions
 
-## 📞 Informasi Kontak (Template)
+## 📞 Informasi Kontak
 
+- **Perusahaan**: Insan Tekno Sejahtera (ITs)
+- **Domain**: insansejahtera.com
 - **Telepon**: +62 812-3456-7890
-- **Email**: info@techsolution.com
+- **Email**: info@insansejahtera.com
 - **Alamat**: Jl. Teknologi No. 123, Jakarta Selatan
 - **Jam Operasional**: Senin-Jumat 08:00-17:00, Sabtu 08:00-14:00
 

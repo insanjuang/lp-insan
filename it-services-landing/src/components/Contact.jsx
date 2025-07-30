@@ -57,8 +57,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@techsolution.com', 'support@techsolution.com'],
-      action: 'mailto:info@techsolution.com'
+      details: ['info@insansejahtera.com', 'support@insansejahtera.com'],
+      action: 'mailto:info@insansejahtera.com'
     },
     {
       icon: MapPin,

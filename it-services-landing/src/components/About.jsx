@@ -89,7 +89,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-6">
-            Tentang <span className="text-primary-600">TechSolution</span>
+            Tentang <span className="text-primary-600">Insan Tekno Sejahtera</span>
           </h2>
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
             Partner terpercaya untuk semua kebutuhan IT Anda. Kami hadir dengan pengalaman bertahun-tahun 
@@ -105,7 +105,7 @@ const About = () => {
               Mengapa Memilih Kami?
             </h3>
             <p className="text-secondary-600 mb-8 leading-relaxed">
-              TechSolution adalah perusahaan penyedia layanan IT yang telah berpengalaman lebih dari 5 tahun 
+              Insan Tekno Sejahtera adalah perusahaan penyedia layanan IT yang telah berpengalaman lebih dari 5 tahun 
               dalam melayani kebutuhan teknologi informasi untuk bisnis dan personal. Kami memahami bahwa 
               teknologi adalah tulang punggung kesuksesan bisnis modern.
             </p>
@@ -197,7 +197,7 @@ const About = () => {
             ))}
           </div>
           <blockquote className="text-xl md:text-2xl font-medium mb-6 italic">
-            "TechSolution telah membantu bisnis kami berkembang dengan solusi IT yang tepat. 
+            "Insan Tekno Sejahtera telah membantu bisnis kami berkembang dengan solusi IT yang tepat. 
             Pelayanan profesional dan hasil yang memuaskan!"
           </blockquote>
           <div className="text-primary-100">
