@@ -35,13 +35,13 @@ const Hero = () => {
             {/* Content */}
             <div className="text-white">
               <div className="flex items-center space-x-2 mb-6">
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-yellow-400 font-medium">Dipercaya 500+ Klien</span>
-              </div>
+                <span className="text-yellow-400 font-medium">Dipercaya 500+ Klien</span> */}
+              </div> 
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Solusi IT
@@ -83,7 +83,7 @@ const Hero = () => {
 
               {/* Stats */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                {stats.map((stat, index) => (
+                {/* {stats.map((stat, index) => (
                   <div key={index} className="text-center">
                     <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg mb-3 mx-auto">
                       <stat.icon className="w-6 h-6 text-yellow-400" />
@@ -91,7 +91,7 @@ const Hero = () => {
                     <div className="text-2xl font-bold text-white">{stat.value}</div>
                     <div className="text-blue-200 text-sm">{stat.label}</div>
                   </div>
-                ))}
+                ))} */}
               </div>
             </div>
 

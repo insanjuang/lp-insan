@@ -28,31 +28,61 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
     setIsSubmitted(true);
     
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
+    const formData = new FormData(e.target);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+      _cc: 'tanya.ke.maulana@gmail.com',
+      _subject: 'Pesan Baru dari Website ITs',
+      _template: 'table',
+      _captcha: 'true'
+    };
+
+    try {
+      const response = await fetch('https://formsubmit.co/info@insansejahtera.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
       });
-    }, 3000);
+
+      if (response.ok) {
+        alert('Terima kasih! Pesan Anda telah terkirim.');
+        // Reset form setelah berhasil
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            service: '',
+            message: ''
+          });
+        }, 3000);
+      } else {
+        throw new Error('Gagal mengirim pesan');
+      }
+    } catch (error) {
+      alert('Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi kami melalui kontak yang tersedia.');
+      console.error('Error:', error);
+    }
   };
 
   const contactInfo = [
     {
       icon: Phone,
       title: 'Telepon',
-      details: ['+62 812-3456-7890', '+62 821-9876-5432'],
-      action: 'tel:+6281234567890'
+      details: ['+62 821-1597-9098', '+62 821-1354-8909'],
+      action: 'tel:+6282113548909'
     },
     {
       icon: Mail,
@@ -60,12 +90,12 @@ const Contact = () => {
       details: ['info@insansejahtera.com', 'support@insansejahtera.com'],
       action: 'mailto:info@insansejahtera.com'
     },
-    {
-      icon: MapPin,
-      title: 'Alamat',
-      details: ['Jl. Teknologi No. 123', 'Jakarta Selatan, 12345'],
-      action: 'https://maps.google.com'
-    },
+    // {
+    //   icon: MapPin,
+    //   title: 'Alamat',
+    //   details: ['Jl. Teknologi No. 123', 'Jakarta Selatan, 12345'],
+    //   action: 'https://maps.google.com'
+    // },
     {
       icon: Clock,
       title: 'Jam Operasional',
@@ -254,7 +284,7 @@ const Contact = () => {
               </h4>
               <div className="space-y-3">
                 <a 
-                  href="https://wa.me/6281234567890" 
+                  href="https://wa.me/6282113548909" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-4 bg-green-50 hover:bg-green-100 rounded-lg transition-colors group"
@@ -272,7 +302,7 @@ const Contact = () => {
                 </a>
 
                 <a 
-                  href="tel:+6281234567890"
+                  href="tel:+6282113548909"
                   className="flex items-center justify-between p-4 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors group"
                 >
                   <div className="flex items-center space-x-3">
@@ -290,7 +320,7 @@ const Contact = () => {
             </div>
 
             {/* Emergency Support */}
-            <div className="bg-gradient-to-r from-red-500 to-red-600 rounded-2xl p-6 text-white">
+            {/* <div className="bg-gradient-to-r from-red-500 to-red-600 rounded-2xl p-6 text-white">
               <h4 className="text-lg font-semibold mb-2">
                 🚨 Emergency Support
               </h4>
@@ -303,7 +333,7 @@ const Contact = () => {
               >
                 Hubungi: +62 812-3456-7890
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

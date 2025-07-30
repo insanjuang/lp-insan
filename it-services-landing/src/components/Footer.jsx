@@ -48,11 +48,8 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-2 mb-6">
-                <div className="flex items-center justify-center w-10 h-10 bg-primary-600 rounded-lg">
-                  <Monitor className="w-6 h-6 text-white" />
-                </div>
                 <div>
-                  <h3 className="text-xl font-bold">ITs</h3>
+                  <img src="/its-logo.png" alt="Insan Tekno Sejahtera" className="w-20 h-15" />
                   <p className="text-xs text-secondary-400">Insan Tekno Sejahtera</p>
                 </div>
               </div>
@@ -111,7 +108,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Info */}
-            <div>
+            {/* <div>
               <h4 className="text-lg font-semibold mb-6">Hubungi Kami</h4>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -137,8 +134,8 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Emergency Contact */}
-              <div className="mt-6 p-4 bg-red-600/20 border border-red-500/30 rounded-lg">
+              // Emergency Contact 
+               <div className="mt-6 p-4 bg-red-600/20 border border-red-500/30 rounded-lg">
                 <h5 className="text-red-400 font-semibold mb-2">🚨 Emergency Support</h5>
                 <p className="text-red-300 text-sm mb-2">24/7 untuk kebutuhan darurat</p>
                 <a 
@@ -147,12 +144,12 @@ const Footer = () => {
                 >
                   +62 812-3456-7890
                 </a>
-              </div>
-            </div>
+              </div> 
+            </div> */}
           </div>
 
           {/* Newsletter Subscription */}
-          <div className="border-t border-secondary-800 pt-8 mb-8">
+          {/* <div className="border-t border-secondary-800 pt-8 mb-8">
             <div className="bg-secondary-800 rounded-2xl p-6 text-center">
               <h4 className="text-xl font-semibold mb-2">
                 Dapatkan Update Terbaru
@@ -171,12 +168,12 @@ const Footer = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Bottom Footer */}
           <div className="border-t border-secondary-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="text-secondary-400 text-sm mb-4 md:mb-0">
-              © 2024 Insan Tekno Sejahtera. All rights reserved. Dibuat dengan ❤️ untuk kemajuan teknologi Indonesia.
+              © 2025 Insan Tekno Sejahtera. All rights reserved. Dibuat dengan ❤️ untuk kemajuan teknologi Indonesia.
             </div>
             <div className="flex items-center space-x-6">
               <a href="#" className="text-secondary-400 hover:text-primary-400 text-sm transition-colors">

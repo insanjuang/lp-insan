@@ -1,43 +1,12 @@
 import React from 'react';
 import { 
-  Award, 
-  Users, 
-  Clock, 
-  Shield, 
   Target, 
-  Heart,
-  CheckCircle,
-  Star
+  Heart, 
+  Shield,
+  CheckCircle
 } from 'lucide-react';
 
 const About = () => {
-  const achievements = [
-    {
-      icon: Users,
-      number: '500+',
-      label: 'Klien Puas',
-      description: 'Klien dari berbagai industri'
-    },
-    {
-      icon: Award,
-      number: '5+',
-      label: 'Tahun Pengalaman',
-      description: 'Melayani kebutuhan IT'
-    },
-    {
-      icon: CheckCircle,
-      number: '1000+',
-      label: 'Project Selesai',
-      description: 'Dengan tingkat kepuasan tinggi'
-    },
-    {
-      icon: Clock,
-      number: '24/7',
-      label: 'Support',
-      description: 'Siap membantu kapan saja'
-    }
-  ];
-
   const values = [
     {
       icon: Target,
@@ -56,30 +25,18 @@ const About = () => {
     }
   ];
 
-  const team = [
+  const clients = [
     {
-      name: 'Ahmad Teknisi',
-      role: 'Lead Hardware Specialist',
-      experience: '8+ tahun pengalaman',
-      speciality: 'Repair & Maintenance'
+      name: 'Cipta Solusi Cendikia',
+      link: 'https://taskia.id',
+      image: 'https://taskia.id/public/img/logo.png',
+      description: 'Landing Page'
     },
     {
-      name: 'Sari Network',
-      role: 'Network Engineer',
-      experience: '6+ tahun pengalaman',
-      speciality: 'Jaringan & Security'
-    },
-    {
-      name: 'Budi Developer',
-      role: 'Full Stack Developer',
-      experience: '7+ tahun pengalaman',
-      speciality: 'Web & Mobile Apps'
-    },
-    {
-      name: 'Rina Designer',
-      role: 'Graphic Designer',
-      experience: '5+ tahun pengalaman',
-      speciality: 'Visual & Brand Design'
+      name: 'Yayasan Cahaya Ayah Bunda',
+      link: 'https://cahayaayahbunda.org',
+      image: 'https://cahayaayahbunda.org/wp-content/uploads/2025/05/ycba-form.png',
+      description: 'Landing Page'
     }
   ];
 
@@ -92,8 +49,8 @@ const About = () => {
             Tentang <span className="text-primary-600">Insan Tekno Sejahtera</span>
           </h2>
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-            Partner terpercaya untuk semua kebutuhan IT Anda. Kami hadir dengan pengalaman bertahun-tahun 
-            dan dedikasi tinggi untuk memberikan solusi teknologi terbaik.
+            Partner teknologi yang fokus pada kualitas dan kepuasan klien. 
+            Kami hadir untuk memberikan solusi teknologi yang tepat guna.
           </p>
         </div>
 
@@ -105,9 +62,9 @@ const About = () => {
               Mengapa Memilih Kami?
             </h3>
             <p className="text-secondary-600 mb-8 leading-relaxed">
-              Insan Tekno Sejahtera adalah perusahaan penyedia layanan IT yang telah berpengalaman lebih dari 5 tahun 
-              dalam melayani kebutuhan teknologi informasi untuk bisnis dan personal. Kami memahami bahwa 
-              teknologi adalah tulang punggung kesuksesan bisnis modern.
+              Insan Tekno Sejahtera adalah perusahaan teknologi yang berfokus pada 
+              pengembangan solusi IT yang efektif dan efisien. Kami percaya bahwa 
+              teknologi yang tepat dapat mendorong pertumbuhan bisnis Anda.
             </p>
             
             <div className="space-y-6 mb-8">
@@ -134,75 +91,26 @@ const About = () => {
             </div>
           </div>
 
-          {/* Right Content - Achievements */}
+          {/* Right Content - Clients */}
           <div className="bg-secondary-50 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-secondary-900 mb-8 text-center">
-              Pencapaian Kami
+              Klien Kami
             </h3>
-            <div className="grid grid-cols-2 gap-6">
-              {achievements.map((achievement, index) => (
-                <div key={index} className="text-center">
-                  <div className="flex items-center justify-center w-16 h-16 bg-primary-600 rounded-xl mb-4 mx-auto">
-                    <achievement.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="text-3xl font-bold text-primary-600 mb-2">
-                    {achievement.number}
-                  </div>
-                  <div className="font-semibold text-secondary-900 mb-1">
-                    {achievement.label}
-                  </div>
-                  <div className="text-sm text-secondary-600">
-                    {achievement.description}
+            <div className="space-y-6">
+              {clients.map((client, index) => (
+                <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                      <img src={client.image} alt={client.name} className="w-12 h-12" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-secondary-900"><a href={client.link} target="_blank" rel="noopener noreferrer">{client.name}</a></h4>
+                      <p className="text-secondary-600 text-sm">{client.description}</p>
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-
-        {/* Team Section */}
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-secondary-900 mb-4">
-              Tim Ahli Kami
-            </h3>
-            <p className="text-secondary-600 max-w-2xl mx-auto">
-              Didukung oleh tim profesional berpengalaman yang siap memberikan solusi terbaik 
-              untuk setiap kebutuhan teknologi Anda.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member, index) => (
-              <div key={index} className="bg-white border border-secondary-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow duration-300">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">
-                    {member.name.split(' ')[0][0]}
-                  </span>
-                </div>
-                <h4 className="font-semibold text-secondary-900 mb-1">{member.name}</h4>
-                <p className="text-primary-600 font-medium text-sm mb-2">{member.role}</p>
-                <p className="text-secondary-600 text-sm mb-2">{member.experience}</p>
-                <p className="text-secondary-500 text-xs">{member.speciality}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Testimonial Preview */}
-        <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-white text-center">
-          <div className="flex justify-center mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-            ))}
-          </div>
-          <blockquote className="text-xl md:text-2xl font-medium mb-6 italic">
-            "Insan Tekno Sejahtera telah membantu bisnis kami berkembang dengan solusi IT yang tepat. 
-            Pelayanan profesional dan hasil yang memuaskan!"
-          </blockquote>
-          <div className="text-primary-100">
-            <div className="font-semibold">Pak Hendro</div>
-            <div className="text-sm">Owner, CV Maju Jaya</div>
           </div>
         </div>
       </div>

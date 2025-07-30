@@ -29,12 +29,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-10 h-10 bg-primary-600 rounded-lg">
-              <Monitor className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-secondary-900">ITs</h1>
-              <p className="text-xs text-secondary-600">Insan Tekno Sejahtera</p>
+            <div className="flex items-center justify-center">
+              <img src="/its-logo.png" alt="Insan Tekno Sejahtera" className="w-20 h-15" />
             </div>
           </div>
 
