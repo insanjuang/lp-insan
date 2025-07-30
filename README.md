@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CV Landing Page - Suga Maulana
 
-## Getting Started
+Landing page sederhana untuk curriculum vitae dengan fokus pada Backend Developer role.
 
-First, run the development server:
+## Fitur
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design** - Tampil baik di desktop, tablet, dan mobile
+- **Modern UI** - Desain clean dan professional
+- **Fast Loading** - Menggunakan CSS murni tanpa framework berat
+- **SEO Friendly** - Struktur HTML yang baik untuk search engine
+
+## Cara Kustomisasi
+
+### 1. Informasi Personal
+Edit file `index.html` pada bagian header:
+- Ganti nama "Suga Maulana" dengan nama Anda
+- Update email, LinkedIn, dan GitHub links
+- Sesuaikan lokasi
+
+### 2. Tentang Saya
+Update deskripsi di section "Tentang Saya" sesuai dengan background Anda.
+
+### 3. Keahlian Teknis
+Sesuaikan skill tags dengan keahlian yang Anda miliki:
+- Programming Languages
+- Frameworks & Libraries  
+- Database
+- Tools & Technologies
+
+### 4. Pengalaman Kerja
+Ganti dengan pengalaman kerja Anda yang sebenarnya:
+- Nama perusahaan
+- Posisi
+- Periode kerja
+- Deskripsi pekerjaan
+
+### 5. Pendidikan
+Update dengan informasi pendidikan Anda.
+
+### 6. Proyek
+Tambahkan proyek-proyek yang pernah Anda kerjakan.
+
+## Cara Menjalankan
+
+1. Download semua file
+2. Buka `index.html` di browser
+3. Atau deploy ke hosting (Netlify, Vercel, GitHub Pages, dll)
+
+## File Structure
+
+```
+├── index.html          # File HTML utama
+├── style.css           # File CSS untuk styling
+└── README.md           # Dokumentasi
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Teknologi yang Digunakan
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- HTML5
+- CSS3
+- Font Awesome Icons
+- Google Fonts (Inter)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tips Kustomisasi
 
-## Learn More
+1. **Warna**: Ubah color scheme di file `style.css` pada bagian CSS variables
+2. **Font**: Ganti font family di Google Fonts import
+3. **Foto**: Ganti icon dengan foto profile Anda
+4. **Konten**: Sesuaikan semua konten dengan informasi pribadi Anda
 
-To learn more about Next.js, take a look at the following resources:
+## Browser Support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Chrome (terbaru)
+- Firefox (terbaru)  
+- Safari (terbaru)
+- Edge (terbaru)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dibuat dengan ❤️ untuk Backend Developers
